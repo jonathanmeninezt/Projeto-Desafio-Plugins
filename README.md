@@ -27,7 +27,7 @@ Plugin Pré-Validation Campo Telefone Obrigatório
 
 ## 🔨 Ferramentas utilizadas
 
-- Dynamics 365 CRM
+- Microsoft Dynamics 365 CRM
 - .NET
 - C#
 - Plugin Registration
