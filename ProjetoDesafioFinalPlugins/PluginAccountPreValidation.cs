@@ -39,7 +39,7 @@ namespace PluginsTreinamento {
 
                 if (!entidadeContexto.Contains("jony_telefone")) // verifica se o atributo telephone1 não está presente no contexto
                 {
-                    throw new InvalidPluginExecutionException("Campo Telefone principal é obrigatório!!"); // exibe Exception de Erro
+                    throw new InvalidPluginExecutionException("Campo Telefone principal é obrigatório!"); // exibe Exception de Erro
                 }
             }
         }
