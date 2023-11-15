@@ -32,7 +32,7 @@ namespace ProjetoDesafioFinalPlugins {
 
                     if (!entidadeContexto.Contains("websiteurl")) // verifica se o atributo websiteurl não está presente no contexto
                     {
-                        throw new InvalidPluginExecutionException("Campo websiteurl é obrigatório!!"); // exibe Exception de Erro
+                        throw new InvalidPluginExecutionException("Campo websiteurl é obrigatório!"); // exibe Exception de Erro
                     }
 
                     // Variável para nova entidade TASK vazia
