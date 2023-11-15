@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Microsoft.Xrm.Sdk.Query;
+using Microsoft.Xrm.Sdk;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Xrm.Sdk;
-using Microsoft.Xrm.Sdk.Query;
 
-namespace PluginsTreinamento {
+namespace ProjetoDesafioFinalPlugins
+{
     public class PluginAccountPreOperation : IPlugin {
-        // método requerido para execução do Plugin recebendo como parâmetro os dados do provedor de serviço
+
         public void Execute(IServiceProvider serviceProvider) {
             // Variável contendo o contexto da execução
             IPluginExecutionContext context =
@@ -52,7 +53,7 @@ namespace PluginsTreinamento {
 
                         trace.Trace("FetchContact: " + FetchContact); // armazena informações de LOG
 
-                        // variável contendo o retorno da consulta FetchXML.
+                        // variável contendo o retorno da consulta FetchXML
                         var primarycontact = serviceAdmin.RetrieveMultiple(new FetchExpression(FetchContact));
 
                         if (primarycontact.Entities.Count > 0) // verifica se contém entidade
@@ -69,3 +70,5 @@ namespace PluginsTreinamento {
         }
     }
 }
+    
+

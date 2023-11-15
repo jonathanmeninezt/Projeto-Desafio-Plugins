@@ -99,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CrmServiceClient.cs" />
+    <Compile Include="PluginAccountPostOperation.cs" />
     <Compile Include="PluginAccountPreOperation.cs" />
     <Compile Include="PluginAccountPreValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
